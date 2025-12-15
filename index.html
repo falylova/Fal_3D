@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Fal 3D</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <main>
+        <aside>
+            <ul class="Links">
+                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i><p>Home</p></li>
+                <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i><p>About Me</p></li>
+                <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i><p>Services</p></li>
+                <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i><p>Gallery</p></li>
+                <li onclick="Navigate(9)"><i class="fa-solid fa-comments"></i><p>Contact Me</p></li>
+            </ul>
+        </aside>
+
+        <div class="swiper mySwiper">
+            <div class="SlideContainer swiper-wrapper">
+                
+                <!-- Slide 0: Home -->
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1>Welcome, <span class="stylized-name">To Fal 3D</span></h1>
+                        <h2>where <span class="proffesions">your idea come to life</span></h2>
+                        <p class="heroline">
+                            From concept to final render, I turn products into professional 3D visuals that capture attention and highlight their value.
+                        </p>
+                    </div>
+                    <div class="SideImg">
+                        <div class="top-right-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                        <img src="sary/PetitBureau.png" alt="3D Project">
+                        <div class="bottom-left-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                    </div>
+                    <p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i></p>
+                </div>
+
+                <!-- Slide 1: About -->
+                <div class="swiper-slide">
+                    <div class="about-us">
+                        <h1 class="heading">About Me</h1>
+                        <h3 class="sub-heading">I'm Fal Lova, <span class="proffesions">An artist 3D</span></h3>
+                        <p class="aboutme-deatils">
+                            I am a Blender Specialist dedicated to precise product visualization. My Electronics background ensures technical accuracy in every Hard-Surface model and complex design. I deliver photorealistic 3D visuals that are accurate and optimized for maximum marketing impact.
+                        </p>
+                        <div class="about-me-divison">
+                            <div class="about-me-table">
+                                <li><span>Location:</span> Madagascar (Remote)</li>
+                                <li><span>Availability:</span> Available for freelance projects</li>
+                                <li><span>Tools:</span> Blender (Modeling & Rendering), Photoshop</li>
+                                <li><span>Rigor:</span> Electronics Engineering Background</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Services -->
+                <div class="swiper-slide services">
+                    <h1 class="heading">Services</h1>
+                    <div class="service"><div class="service-icon"><i class="fa-solid fa-cube"></i></div><h2>Technical & Hard-Surface Modeling</h2></div>
+                    <div class="service"><div class="service-icon"><i class="fa-solid fa-camera-retro"></i></div><h2>Photorealistic Product Rendering</h2></div>
+                    <div class="service"><div class="service-icon"><i class="fa-solid fa-gem"></i></div><h2>3D Logo Design & Branding Elements</h2></div>
+                    <div class="service"><div class="service-icon"><i class="fa-solid fa-desktop"></i></div><h2>Graphic Designer</h2></div>
+                    <div class="service"><div class="service-icon"><i class="fa-solid fa-film"></i></div><h2>Short Explainer Animations</h2></div>
+                    <div class="service"><div class="service-icon"><i class="fa-solid fa-cogs"></i></div><h2>3D Prototyping & CAD Optimization</h2></div>
+                </div>
+
+                <!-- Slides 3-8: Projects -->
+                <div class="swiper-slide project-slide">
+                    <div class="project-gallery">
+                        <h1 class="heading">Project 1</h1>
+                        <div class="main-photo"><img id="mainPhoto0" src="sary/vao.png" alt=""></div>
+                        <div class="thumbs">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide project-slide">
+                    <div class="project-gallery">
+                        <h1 class="heading">Project 2</h1>
+                        <div class="main-photo"><img id="mainPhoto1" src="sary/tsisran1.png" alt=""></div>
+                        <div class="thumbs">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide project-slide">
+                    <div class="project-gallery">
+                        <h1 class="heading">Project 3</h1>
+                        <div class="main-photo"><img id="mainPhoto2" src="sary/untitled.png" alt=""></div>
+                        <div class="thumbs">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide project-slide">
+                    <div class="project-gallery">
+                        <h1 class="heading">Project 4</h1>
+                        <div class="main-photo"><img id="mainPhoto3" src="sary/essay1.png" alt=""></div>
+                        <div class="thumbs">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide project-slide">
+                    <div class="project-gallery">
+                        <h1 class="heading">Project 5</h1>
+                        <div class="main-photo"><img id="mainPhoto4" src="sary/sum.png" alt=""></div>
+                        <div class="thumbs">
+                        </div>
+                    </div>
+                </div>
+
+             <div class="swiper-slide project-slide">
+    <div class="project-gallery">
+        <h1 class="heading">Project 6</h1>
+        <div class="main-photo">
+            <video id="mainVideo6" controls width="70%" style="border-radius:15px;">
+                <source src="sary/usb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="thumbs">
+            <!-- Pas de miniatures ici, car c'est une seule vidéo -->
+        </div>
+    </div>
+</div>
+
+
+                <!-- Slide 9: Contact -->
+                <div class="swiper-slide contactMe">
+                    <h1 class="heading">Contact Me</h1>
+                    <div class="contactCards">
+                        <div class="contactinfo"><a href="https://wa.me/261345095322" target="_blank"><i class="fa-brands fa-whatsapp"></i><h3>WhatsApp</h3><p>+261 34 50 953 22</p></a></div>
+                        <div class="contactinfo"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i><h3>Facebook Page</h3><p>Fal 3D</p></a></div>
+                        <div class="contactinfo"><a href="mailto:fanantenanafaly6@gmail.com"><i class="fa-regular fa-envelope"></i><h3>Email</h3><p>fanantenanafaly6@gmail.com</p></a></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

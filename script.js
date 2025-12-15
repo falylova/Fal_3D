@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var swiper = new Swiper(".mySwiper", {
-        effect: "cube",
-        allowTouchMove: false,
-        grabCursor: false,
-        cubeEffect: {
-            shadow: true,
-            slideShadows: true,
-            shadowOffset: 20,
-            shadowScale: 0.94,
-        },
-        mousewheel: true,
-        loop: false,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+var swiper = new Swiper(".mySwiper", {
+    effect: "cube",
+    cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+    },
+    mousewheel: true, // pour PC
+    loop: false,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    allowTouchMove: true, // ✅ autorise le swipe tactile sur mobile
+});
+
 
     swiper.on('slideChange', function () {
         const activeIndex = swiper.activeIndex;
